@@ -1,0 +1,46 @@
+@import "./main.css";
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "calc history";
+}
+
+.calc {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 0.2fr 1.8fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "number"
+    "result"
+    "numpad";
+  grid-area: calc;
+}
+
+.number {
+  grid-area: number;
+  background-color: var(--bgColor);
+  padding: 15px;
+  text-align: right;
+  letter-spacing: 3px;
+}
+
+.result {
+  grid-area: result;
+  background-color: var(--bgColor);
+  text-align: right;
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+.numpad {
+  grid-area: numpad;
+}
+
+.history {
+  grid-area: history;
+  background-color: var(--bgColor);
+  margin: 10px;
+}

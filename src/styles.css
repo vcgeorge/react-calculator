@@ -1,0 +1,121 @@
+@import "./main.css";
+body {
+  margin: 0;
+}
+.app {
+  font-family: sans-serif;
+  text-align: center;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.calMain {
+  display: grid;
+  grid-template-columns: auto 50%;
+  padding: 10px;
+}
+
+.calcContent {
+  grid-row: 1/4;
+}
+
+.calMain .topBox {
+  display: grid;
+  text-align: right;
+  grid-gap: 10px;
+  min-height: 81px;
+}
+
+.calMain .topBox span:first-child {
+  font-size: 22px;
+  color: var(--darkColor);
+}
+
+.calMain .topBox span:last-child {
+  font-size: 40px;
+  color: var(--darkColor);
+}
+
+.topBox .historyText {
+  font-size: 22px;
+  color: var(--grayColor);
+  letter-spacing: 1px;
+  margin: 0;
+  text-align: right;
+  padding: 15px 15px 0;
+}
+.historyHeader {
+  font-size: 22px;
+  margin: 0;
+  padding: 10px;
+  border-bottom: solid 1px var(--borderColor);
+}
+.history {
+  max-height: 480px;
+  overflow: auto;
+}
+
+.calMain .bottomBox {
+  display: grid;
+  grid-template-columns: auto 60px;
+  background-color: var(--bgColor);
+  border-top: solid 1px var(--borderColor);
+}
+
+.calMain .bottomBox .inner {
+  padding: 10px;
+  text-align: center;
+}
+
+.calMain .bottomBox .symb {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  grid-gap: 10px;
+}
+
+.calMain .bottomBox .symb span {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.calMain .bottomBox .number {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  grid-gap: 10px;
+}
+
+.calMain .bottomBox .number span {
+  padding: 30px;
+  font-size: 20px;
+  border: solid 1px var(--borderColor);
+  background-color: var(--white);
+  font-weight: bold;
+}
+.calMain .bottomBox .number span:hover {
+  background-color: var(--hover);
+}
+
+.calMain .bottomBox .symbol {
+  grid-template-columns: auto;
+  display: grid;
+  border-left: solid 1px var(--borderColor);
+  text-align: center;
+}
+
+.calMain .bottomBox .symbol span {
+  padding: 10px;
+  color: var(--signButton);
+  font-size: 25px;
+  align-items: center;
+  display: inherit;
+  font-weight: bold;
+}
+
+.calMain .history .topBox {
+  min-height: auto;
+}
+.calMain .history .topBox p{
+  font-size: 18px;
+}
